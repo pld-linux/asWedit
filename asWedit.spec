@@ -1,5 +1,5 @@
 Summary:	Text and HTML editor
-Summary(pl):	Edytor tekstu i HTML
+Summary(pl):	Edytor tekstu i HTML-a
 Name:		asWedit
 Version:	4.0
 %define	resver	4.0
@@ -46,7 +46,7 @@ syntax highlighting and HTML 4.0 validating.
 
 %description -l pl
 AsWedit jest edytorem plików tekstowych i HTML. Bardzo ³adnie
-pod¶wietla sk³adniê HTML i, co wa¿niejsze, nie pozwala na tworzenie
+pod¶wietla sk³adniê HTML-a i, co wa¿niejsze, nie pozwala na tworzenie
 niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
 
 %prep
