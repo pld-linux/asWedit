@@ -3,9 +3,9 @@ Summary(pl):	Edytor tekstu i HTML
 Name:		asWedit
 Version:	4.0
 %define	resver	4.0
-License:	Non-commercially distributable
+License:	non-commercial
 Group:		Applications/Editors
-Release:	3
+Release:	4
 Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
 Source1:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-cz.tar.gz
 Source2:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-da.tar.gz
@@ -20,9 +20,9 @@ Source10:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-sv.ta
 Source11:	%{name}.wmconfig
 Patch0:		%{name}-helpDir.patch
 URL:		http://www.advasoft.com/asWedit/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	libc
 ExclusiveArch:	%{ix86}
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
