@@ -1,0 +1,132 @@
+diff -u -r asWedit-4.0.old/AsWedit asWedit-4.0/AsWedit
+--- asWedit-4.0.old/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/AsWedit	Tue Jan  5 01:04:11 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:	/usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/cz/AsWedit asWedit-4.0/cz/AsWedit
+--- asWedit-4.0.old/cz/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/cz/AsWedit	Tue Jan  5 01:04:33 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/da/AsWedit asWedit-4.0/da/AsWedit
+--- asWedit-4.0.old/da/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/da/AsWedit	Tue Jan  5 01:05:04 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/de/AsWedit asWedit-4.0/de/AsWedit
+--- asWedit-4.0.old/de/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/de/AsWedit	Tue Jan  5 01:05:21 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/en/AsWedit asWedit-4.0/en/AsWedit
+--- asWedit-4.0.old/en/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/en/AsWedit	Tue Jan  5 01:05:38 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/es/AsWedit asWedit-4.0/es/AsWedit
+--- asWedit-4.0.old/es/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/es/AsWedit	Tue Jan  5 01:05:54 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/fr/AsWedit asWedit-4.0/fr/AsWedit
+--- asWedit-4.0.old/fr/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/fr/AsWedit	Tue Jan  5 01:06:10 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/nl/AsWedit asWedit-4.0/nl/AsWedit
+--- asWedit-4.0.old/nl/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/nl/AsWedit	Tue Jan  5 01:06:28 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/pl/AsWedit asWedit-4.0/pl/AsWedit
+--- asWedit-4.0.old/pl/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/pl/AsWedit	Tue Jan  5 01:06:41 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/pt/AsWedit asWedit-4.0/pt/AsWedit
+--- asWedit-4.0.old/pt/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/pt/AsWedit	Tue Jan  5 01:06:52 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
+diff -u -r asWedit-4.0.old/sv/AsWedit asWedit-4.0/sv/AsWedit
+--- asWedit-4.0.old/sv/AsWedit	Wed Aug  5 05:00:00 1998
++++ asWedit-4.0/sv/AsWedit	Tue Jan  5 01:07:05 1999
+@@ -43,7 +43,7 @@
+ !!*tmpDir:	/tmp
+ !
+ !   Help directory (uncomment and edit the following line, if needed)
+-!!*helpDir:	/usr/local/lib
++*helpDir:       /usr/X11R6/lib
+ !
+ !   Local printers/print queues list
+ !   (Note resource definition change from 2.0!)
