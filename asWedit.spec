@@ -6,7 +6,10 @@ Version:	4.0
 License:	non-commercial
 Group:		Applications/Editors
 Release:	4
+# advasoft.com seems not working, one of working mirrors:
+# http://www.uni-koeln.de/ftp/www/asWedit-4.0/ 
 Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
+# http://www.uni-koeln.de/ftp/www/asWedit-4.0/i18n-resources/
 Source1:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-cz.tar.gz
 Source2:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-da.tar.gz
 Source3:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-de.tar.gz
@@ -39,8 +42,6 @@ niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
 %prep
 %setup -q -b 1 -b 2 -b 3 -b 4 -b 5 -b 6 -b 7 -b 8 -b 9 -b 10
 %patch -p1
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
