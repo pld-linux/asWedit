@@ -7,7 +7,7 @@ Group:         Applications/Editors
 Group(pl):     Aplikacje/Edytory
 Release:       2
 ######         http://www.advasoft.com/asWedit
-Source:        %{name}-%{version}-i386.linux.tar.gz
+Source0:        %{name}-%{version}-i386.linux.tar.gz
 ######         http://www.advasoft.com/asWedit/i18n-resources
 Source1:       AsWedit-%{version}-cz.tar.gz
 Source2:       AsWedit-%{version}-da.tar.gz
@@ -19,10 +19,10 @@ Source7:       AsWedit-%{version}-nl.tar.gz
 Source8:       AsWedit-%{version}-pl.tar.gz
 Source9:       AsWedit-%{version}-pt.tar.gz
 Source10:      AsWedit-%{version}-sv.tar.gz
-Source11:      asWedit.wmconfig
-Patch:         asWedit-helpDir.patch
+Source11:      %{name}.wmconfig
+Patch:         %{name}-helpDir.patch
 Requires:      libc
-Buildroot:     /var/tmp/%{name}-%{version}-root 
+Buildroot:     /tmp/%{name}-%{version}-root 
 ExclusiveArch: i386
 
 %description
@@ -90,7 +90,6 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Jan 28 1999 Micha³ Kuratczyk <kurkens@polbox.com>
 - chmod 755 for binaries
 - added stripping binary
-- removed macros from Patch and wmconfig source
 - cosmetic changes
 
 * Tue Jan  5 1999 Artur Frysiak <wiget@usa.net>
