@@ -23,7 +23,7 @@ Source11:      %{name}.wmconfig
 Patch:         %{name}-helpDir.patch
 Requires:      libc
 BuildRoot:	/tmp/%{name}-%{version}-root
-ExclusiveArch: i386 i486 i586 i686
+ExclusiveArch: %{ix86}
 
 %description
 asWedit is powerful editor for text file and HTML pages. It contains
