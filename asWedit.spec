@@ -85,13 +85,3 @@ rm -rf $RPM_BUILD_ROOT
 %lang(pl) /usr/X11R6/lib/X11/pl/app-defaults/AsWedit
 %lang(pt) /usr/X11R6/lib/X11/pt/app-defaults/AsWedit
 %lang(sv) /usr/X11R6/lib/X11/sv/app-defaults/AsWedit
-
-%changelog
-* Thu Jan 28 1999 Micha³ Kuratczyk <kurkens@polbox.com>
-- chmod 755 for binaries
-- added stripping binary
-- cosmetic changes
-
-* Tue Jan  5 1999 Artur Frysiak <wiget@usa.net>
-[4.0-1d]
-- first rpm release
