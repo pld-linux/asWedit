@@ -4,10 +4,11 @@ Name:		asWedit
 Version:	4.0
 Copyright:	Non-commercially distributable
 Group:		Applications/Editors
-Group(pt):	X11/Aplicações/Editores
+Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
+Group(pt):	Aplicações/Editores
 Release:	2
-######		http:	//www.advasoft.com/asWedit
+URL:		http://www.advasoft.com/asWedit/
 Source0:	%{name}-%{version}-i386.linux.tar.gz
 ######		http:	//www.advasoft.com/asWedit/i18n-resources
 Source1:	AsWedit-%{version}-cz.tar.gz
