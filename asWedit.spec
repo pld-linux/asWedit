@@ -5,9 +5,6 @@ Version:	4.0
 %define	resver	4.0
 License:	Non-commercially distributable
 Group:		Applications/Editors
-Group(de):	Applikationen/Editors
-Group(pl):	Aplikacje/Edytory
-Group(pt):	Aplicações/Editores
 Release:	2
 Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
 Source1:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-cz.tar.gz
