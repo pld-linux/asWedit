@@ -22,7 +22,7 @@ Source10:      AsWedit-%{version}-sv.tar.gz
 Source11:      %{name}.wmconfig
 Patch:         %{name}-helpDir.patch
 Requires:      libc
-Buildroot:     /tmp/%{name}-%{version}-root 
+BuildRoot:	/tmp/%{name}-%{version}-root
 ExclusiveArch: i386
 
 %description
