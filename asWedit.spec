@@ -27,8 +27,6 @@ Requires:	libc
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 asWedit is powerful editor for text file and HTML pages. It contains
