@@ -77,10 +77,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %config(missingok) %{_sysconfdir}/X11/wmconfig/*
 
+%{_libdir}/X11/en/app-defaults/AsWedit
 %lang(cs) %{_libdir}/X11/cs/app-defaults/AsWedit
 %lang(da) %{_libdir}/X11/da/app-defaults/AsWedit
 %lang(de) %{_libdir}/X11/de/app-defaults/AsWedit
-%lang(en) %{_libdir}/X11/en/app-defaults/AsWedit
 %lang(es) %{_libdir}/X11/es/app-defaults/AsWedit
 %lang(fr) %{_libdir}/X11/fr/app-defaults/AsWedit
 %lang(nl) %{_libdir}/X11/nl/app-defaults/AsWedit
