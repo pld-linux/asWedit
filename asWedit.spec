@@ -4,11 +4,12 @@ Name:		asWedit
 Version:	4.0
 Copyright:	Non-commercially distributable
 Group:		Applications/Editors
+Group(pt):	X11/Aplicações/Editores
 Group(pl):	Aplikacje/Edytory
 Release:	2
-######		http://www.advasoft.com/asWedit
+######		http:	//www.advasoft.com/asWedit
 Source0:	%{name}-%{version}-i386.linux.tar.gz
-######		http://www.advasoft.com/asWedit/i18n-resources
+######		http:	//www.advasoft.com/asWedit/i18n-resources
 Source1:	AsWedit-%{version}-cz.tar.gz
 Source2:	AsWedit-%{version}-da.tar.gz
 Source3:	AsWedit-%{version}-de.tar.gz
@@ -20,7 +21,7 @@ Source8:	AsWedit-%{version}-pl.tar.gz
 Source9:	AsWedit-%{version}-pt.tar.gz
 Source10:	AsWedit-%{version}-sv.tar.gz
 Source11:	%{name}.wmconfig
-Patch:		%{name}-helpDir.patch
+Patch0:		%{name}-helpDir.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	libc
 ExclusiveArch:	%{ix86}
@@ -33,9 +34,9 @@ asWedit is powerful editor for text file and HTML pages. It contains
 syntax highlighting and HTML 4.0 validating.
 
 %description -l pl
-AsWedit jest edytorem plików tekstowych i HTML. Bardzo ³adnie pod¶wietla
-sk³adniê HTML i, co wa¿niejsze, nie pozwala na tworzenie niezgodnych ze 
-specyfikacj± HTML 4.0 stron WWW.
+AsWedit jest edytorem plików tekstowych i HTML. Bardzo ³adnie
+pod¶wietla sk³adniê HTML i, co wa¿niejsze, nie pozwala na tworzenie
+niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
 
 %prep
 %setup -q -b 1 -b 2 -b 3 -b 4 -b 5 -b 6 -b 7 -b 8 -b 9 -b 10
@@ -48,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/X11/app-defaults} \
   $RPM_BUILD_ROOT%{_libdir}/X11/{cz,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults \
-  $RPM_BUILD_ROOT/etc/X11/wmconfig
+$RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
 
 install  -s asWedit $RPM_BUILD_ROOT%{_bindir}/asWedit
 install  asWedit.hlp $RPM_BUILD_ROOT%{_libdir}/asWedit.hlp
@@ -64,7 +65,7 @@ install  nl/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/nl/app-defaults/AsWedit
 install  pl/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/pl/app-defaults/AsWedit
 install  pt/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/pt/app-defaults/AsWedit
 install  sv/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/sv/app-defaults/AsWedit
-install  %{SOURCE11} $RPM_BUILD_ROOT/etc/X11/wmconfig/asWedit
+install %{SOURCE11} $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig/asWedit
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -76,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/asWedit.hlp
 %{_libdir}/X11/app-defaults/AsWedit
 
-%config(missingok) /etc/X11/wmconfig/*
+%config(missingok) %{_sysconfdir}/X11/wmconfig/*
 
 %lang(cz) %{_libdir}/X11/cz/app-defaults/AsWedit
 %lang(da) %{_libdir}/X11/da/app-defaults/AsWedit
