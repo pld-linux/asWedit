@@ -5,7 +5,7 @@ Version:	4.0
 %define	resver	4.0
 License:	Non-commercially distributable
 Group:		Applications/Editors
-Release:	2
+Release:	3
 Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
 Source1:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-cz.tar.gz
 Source2:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-da.tar.gz
@@ -46,14 +46,14 @@ niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/X11/app-defaults} \
-	$RPM_BUILD_ROOT%{_libdir}/X11/{cz,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults \
+	$RPM_BUILD_ROOT%{_libdir}/X11/{cs,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults \
 	$RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
 
 install  asWedit $RPM_BUILD_ROOT%{_bindir}/asWedit
 install  asWedit.hlp $RPM_BUILD_ROOT%{_libdir}/asWedit.hlp
 
 install  AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/AsWedit
-install  cz/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/cz/app-defaults/AsWedit
+install  cz/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/cs/app-defaults/AsWedit
 install  da/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/da/app-defaults/AsWedit
 install  de/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/de/app-defaults/AsWedit
 install  en/AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/en/app-defaults/AsWedit
@@ -77,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %config(missingok) %{_sysconfdir}/X11/wmconfig/*
 
-%lang(cz) %{_libdir}/X11/cz/app-defaults/AsWedit
+%lang(cs) %{_libdir}/X11/cs/app-defaults/AsWedit
 %lang(da) %{_libdir}/X11/da/app-defaults/AsWedit
 %lang(de) %{_libdir}/X11/de/app-defaults/AsWedit
 %lang(en) %{_libdir}/X11/en/app-defaults/AsWedit
