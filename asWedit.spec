@@ -2,27 +2,27 @@ Summary:	Text and HTML editor
 Summary(pl):	Edytor tekstu i HTML
 Name:		asWedit
 Version:	4.0
-Copyright:	Non-commercially distributable
+%define	resver	4.0
+License:	Non-commercially distributable
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
 Group(pt):	Aplicações/Editores
 Release:	2
-URL:		http://www.advasoft.com/asWedit/
-Source0:	%{name}-%{version}-i386.linux.tar.gz
-######		http:	//www.advasoft.com/asWedit/i18n-resources
-Source1:	AsWedit-%{version}-cz.tar.gz
-Source2:	AsWedit-%{version}-da.tar.gz
-Source3:	AsWedit-%{version}-de.tar.gz
-Source4:	AsWedit-%{version}-en.tar.gz
-Source5:	AsWedit-%{version}-es.tar.gz
-Source6:	AsWedit-%{version}-fr.tar.gz
-Source7:	AsWedit-%{version}-nl.tar.gz
-Source8:	AsWedit-%{version}-pl.tar.gz
-Source9:	AsWedit-%{version}-pt.tar.gz
-Source10:	AsWedit-%{version}-sv.tar.gz
+Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
+Source1:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-cz.tar.gz
+Source2:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-da.tar.gz
+Source3:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-de.tar.gz
+Source4:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-en.tar.gz
+Source5:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-es.tar.gz
+Source6:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-fr.tar.gz
+Source7:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-nl.tar.gz
+Source8:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-pl.tar.gz
+Source9:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-pt.tar.gz
+Source10:	http://www.advasoft.com/asWedit/i18n-resources/AsWedit-%{resver}-sv.tar.gz
 Source11:	%{name}.wmconfig
 Patch0:		%{name}-helpDir.patch
+URL:		http://www.advasoft.com/asWedit/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	libc
 ExclusiveArch:	%{ix86}
@@ -49,10 +49,10 @@ niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/X11/app-defaults} \
-  $RPM_BUILD_ROOT%{_libdir}/X11/{cz,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults \
-$RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
+	$RPM_BUILD_ROOT%{_libdir}/X11/{cz,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults \
+	$RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
 
-install  -s asWedit $RPM_BUILD_ROOT%{_bindir}/asWedit
+install  asWedit $RPM_BUILD_ROOT%{_bindir}/asWedit
 install  asWedit.hlp $RPM_BUILD_ROOT%{_libdir}/asWedit.hlp
 
 install  AsWedit $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/AsWedit
