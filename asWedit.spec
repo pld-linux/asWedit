@@ -1,10 +1,11 @@
-Summary:       text and HTML editor
+Summary:       Text and HTML editor
+Summary(pl):   Edytor tekstowy i HTML
 Name:          asWedit
 Version:       4.0
 Copyright:     Non-commercially distributable
 Group:         Applications/Editors
 Group(pl):     Aplikacje/Edytory
-Release:       1d
+Release:       2
 ######         http://www.advasoft.com/asWedit
 Source:        %{name}-%{version}-i386.linux.tar.gz
 ######         http://www.advasoft.com/asWedit/i18n-resources
@@ -18,12 +19,11 @@ Source7:       AsWedit-%{version}-nl.tar.gz
 Source8:       AsWedit-%{version}-pl.tar.gz
 Source9:       AsWedit-%{version}-pt.tar.gz
 Source10:      AsWedit-%{version}-sv.tar.gz
-Source11:      %{name}.wmconfig
-Patch:         %{name}-helpDir.patch
+Source11:      asWedit.wmconfig
+Patch:         asWedit-helpDir.patch
 Requires:      libc
 Buildroot:     /var/tmp/%{name}-%{version}-root 
 ExclusiveArch: i386
-Summary(pl):   edytor tekstowy i HTML
 
 %description
 asWedit is powerfull editor for text file and HTML pages.
@@ -41,11 +41,12 @@ specyfikacj± HTML 4.0 stron WWW.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,lib/X11/app-defaults}
 install -d $RPM_BUILD_ROOT/usr/X11R6/lib/X11/{cz,da,de,en,es,fr,nl,pl,pt,sv}/app-defaults
 install -d $RPM_BUILD_ROOT/etc/X11/wmconfig
 
-install  asWedit $RPM_BUILD_ROOT/usr/X11R6/bin/asWedit
+install  -s asWedit $RPM_BUILD_ROOT/usr/X11R6/bin/asWedit
 install  asWedit.hlp $RPM_BUILD_ROOT/usr/X11R6/lib/asWedit.hlp
 
 install  AsWedit $RPM_BUILD_ROOT/usr/X11R6/lib/X11/app-defaults/AsWedit
@@ -65,9 +66,9 @@ install  %{SOURCE11} $RPM_BUILD_ROOT/etc/X11/wmconfig/asWedit
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)
+%defattr(644, root, root, 755)
 
-%attr(711,root,root) /usr/X11R6/bin/asWedit
+%attr(755, root, root) /usr/X11R6/bin/asWedit
 /usr/X11R6/lib/asWedit.hlp
 /usr/X11R6/lib/X11/app-defaults/AsWedit
 
@@ -85,6 +86,12 @@ rm -rf $RPM_BUILD_ROOT
 %lang(sv) /usr/X11R6/lib/X11/sv/app-defaults/AsWedit
 
 %changelog
+* Thu Jan 28 1999 Micha³ Kuratczyk <kurkens@polbox.com>
+- chmod 755 for binaries
+- added stripping binary
+- removed macros from Patch and wmconfig source
+- cosmetic changes
+
 * Tue Jan  5 1999 Artur Frysiak <wiget@usa.net>
 [4.0-1d]
 - first rpm release
