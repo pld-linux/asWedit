@@ -26,7 +26,8 @@ Buildroot:     /var/tmp/%{name}-%{version}-root
 ExclusiveArch: i386
 
 %description
-asWedit is powerfull editor for text file and HTML pages.
+asWedit is powerful editor for text file and HTML pages. It contains
+syntax highlighting and HTML 4.0 validating.
 
 %description -l pl
 AsWedit jest edytorem plików tekstowych i HTML. Bardzo ³adnie pod¶wietla
