@@ -67,9 +67,9 @@ install  %{SOURCE11} $RPM_BUILD_ROOT/etc/X11/wmconfig/asWedit
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 
-%attr(755, root, root) /usr/X11R6/bin/asWedit
+%attr(755,root,root) /usr/X11R6/bin/asWedit
 /usr/X11R6/lib/asWedit.hlp
 /usr/X11R6/lib/X11/app-defaults/AsWedit
 
