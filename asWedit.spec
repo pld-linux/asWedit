@@ -7,7 +7,7 @@ License:	non-commercial
 Group:		Applications/Editors
 Release:	4
 # advasoft.com seems not working, one of working mirrors:
-# http://www.uni-koeln.de/ftp/www/asWedit-4.0/ 
+# http://www.uni-koeln.de/ftp/www/asWedit-4.0/
 Source0:	http://www.advasoft.com/asWedit/%{name}-%{version}-i386.linux.tar.gz
 # Source0-md5:	c3d00e0886a2316e46ef05f4c204c0ed
 # http://www.uni-koeln.de/ftp/www/asWedit-4.0/i18n-resources/
