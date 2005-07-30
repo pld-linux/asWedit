@@ -39,7 +39,6 @@ Requires:	libc
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 asWedit is powerful editor for text file and HTML pages. It contains
 syntax highlighting and HTML 4.0 validating.
