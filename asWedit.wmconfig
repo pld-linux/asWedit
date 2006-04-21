@@ -1,4 +1,0 @@
-gvim name "asWedit"
-gvim description "The HTML and text editor"
-gvim exec "asWedit &"
-gvim group "Editors"
