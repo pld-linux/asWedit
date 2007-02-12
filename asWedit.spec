@@ -1,5 +1,5 @@
 Summary:	Text and HTML editor
-Summary(pl.UTF-8):   Edytor tekstu i HTML-a
+Summary(pl.UTF-8):	Edytor tekstu i HTML-a
 Name:		asWedit
 Version:	4.0
 %define	resver	4.0
