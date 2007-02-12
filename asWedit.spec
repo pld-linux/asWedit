@@ -1,5 +1,5 @@
 Summary:	Text and HTML editor
-Summary(pl):	Edytor tekstu i HTML-a
+Summary(pl.UTF-8):   Edytor tekstu i HTML-a
 Name:		asWedit
 Version:	4.0
 %define	resver	4.0
@@ -43,10 +43,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 asWedit is powerful editor for text file and HTML pages. It contains
 syntax highlighting and HTML 4.0 validating.
 
-%description -l pl
-AsWedit jest edytorem plików tekstowych i HTML. Bardzo ³adnie
-pod¶wietla sk³adniê HTML-a i, co wa¿niejsze, nie pozwala na tworzenie
-niezgodnych ze specyfikacj± HTML 4.0 stron WWW.
+%description -l pl.UTF-8
+AsWedit jest edytorem plikÃ³w tekstowych i HTML. Bardzo Å‚adnie
+podÅ›wietla skÅ‚adniÄ™ HTML-a i, co waÅ¼niejsze, nie pozwala na tworzenie
+niezgodnych ze specyfikacjÄ… HTML 4.0 stron WWW.
 
 %prep
 %setup -q -b 1 -b 2 -b 3 -b 4 -b 5 -b 6 -b 7 -b 8 -b 9 -b 10
