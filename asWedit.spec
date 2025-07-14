@@ -50,7 +50,7 @@ niezgodnych ze specyfikacją HTML 4.0 stron WWW.
 
 %prep
 %setup -q -b 1 -b 2 -b 3 -b 4 -b 5 -b 6 -b 7 -b 8 -b 9 -b 10
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
